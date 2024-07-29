@@ -26,6 +26,7 @@ func GetAllFoldersWithPagination(req *FetchFolderRequestWithPagination) (*FetchF
 		end = len(r)
 	}
 
+	//create the paginated slice
 	var fp []*Folder
 	for _, v := range r[start:end] {
 		fp = append(fp, v)
